@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>o7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .text {
+            color: #fff;
+            font-size: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #play-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        #play-button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music">
+        <source src="audio/o7.mp3" type="audio/mpeg">
+        Tarayıcınız müzik dosyasını desteklemiyor.
+    </audio>
+    <div class="container">
+        <p class="text">
+            Ey Türk gençliği! Birinci vazifen;
+            Türk istiklalini, Türk Cumhuriyetini, ilelebet muhafaza ve müdafaa etmektir.
+            Mevcudiyetinin ve istikbalinin yegane temeli budur. Bu temel senin en kıymetli hazinendir. İstikbalde dahi seni bu hazineden mahrum etmek isteyecek dahili ve harici bedhahların olacaktır.
+            Bir gün, istiklal ve cumhuriyeti müdafaa mecburiyetine düşersen, vazifeye atılmak için içinde bulunacağın vaziyetin imkân ve şeraitini düşünmeyeceksin. Bu imkan ve şerait, çok namüsait bir mahiyette tezahür edebilir.
+            İstiklal ve cumhuriyetine kastedecek düşmanlar bütün dünyada emsali görülmemiş bir galibiyetin mümessili olabilirler.
+            Cebren ve hile ile aziz vatanın bütün kaleleri zapt edilmiş, bütün tersanelerine girilmiş, bütün orduları dağıtılmış ve memleketin her köşesi bir fiil işgal edilmiş olabilir.
+            Bütün bu şeraitten daha elim ve daha vahim olmak üzere, memleketin dâhilinde iktidara sahip olanlar, gaflet ve dalalet ve hatta hıyanet içinde bulunabilirler.
+            Hatta bu iktidar sahipleri, şahsi menfaatlerini müstevlilerin siyasi emelleriyle tevhit edebilirler. Millet fakru zaruret içinde harap ve bitap düşmüş olabilir.
+            Ey Türk istikbalinin evladı! İşte bu ahval ve şerait içinde dahi vazifen Türk istiklal ve cumhuriyetini kurtarmaktır. <strong style="color: red">Muhtaç olduğun kudret damarlarındaki asil kanda mevcuttur.</strong>
+        </p>
+        <button id="play-button">Sesli dinle</button>
+    </div>
+
+    <script>
+        document.getElementById('play-button').addEventListener('click', function() {
+            var music = document.getElementById('background-music');
+            music.play();
+        });
+    </script>
+</body>
+</html>
